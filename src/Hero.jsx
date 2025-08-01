@@ -95,7 +95,7 @@ const Hero = () => {
       <div ref={parallaxRef} className="relative min-h-screen px-6 pt-20 z-10 flex flex-col items-center justify-center text-center transition-all duration-75">
         <div className="relative w-44 h-44 mb-6 rounded-full overflow-hidden shadow-2xl hover:ring-4 hover:ring-purple-500 transition-all duration-300">
           <img
-            src="./me.jpg"
+            src="/me.jpg"
             alt="My Profile"
             className="rounded-full w-full h-full object-cover"
           />
