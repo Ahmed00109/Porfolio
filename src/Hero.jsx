@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import About from "./About";
 import Skills from "./Skills";
 import Contact from "./Contact";
-import CursorGlow from "./CursorGlow.JSX";
+import CursorGlow from "./CursorGlow";
 
 const Hero = () => {
   const aboutRef = useRef(null);

@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from './Hero';
 import Contact from './Contact';
 import About from './About';
-import CursorGlow from './CursorGlow.JSX';
+import CursorGlow from './CursorGlow';
 import './App.css';
 
 const App = () => {
