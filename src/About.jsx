@@ -7,7 +7,7 @@ const About = () => {
         <h2 className="text-4xl font-bold mb-6 text-purple-300 animate-pulse text-center">About Me</h2>
 
         <p className="text-lg mb-4 leading-relaxed text-white/90">
-          Hi, I'm <span className="text-purple-400 font-semibold">Ahmed</span> — a passionate web developer from Pakistan. I specialize in building sleek, responsive, and interactive web applications.
+          Hi, I'm <span className="text-purple-400 font-semibold">Ahmed</span> a passionate web developer from Pakistan. I specialize in building sleek, responsive, and interactive web applications.
         </p>
 
         <p className="text-lg mb-4 leading-relaxed text-white/90">
@@ -16,7 +16,7 @@ const About = () => {
 
         <p className="text-lg mb-4 leading-relaxed text-white/90">
           I started my journey during my university years and have since built several meaningful projects including 
-          <span className="text-pink-400 font-semibold"> Shyra.net</span> — a blockchain-powered social media platform based on Steem.
+          <span className="text-pink-400 font-semibold"> Shyra.net</span> a blockchain-powered social media platform based on Steem.
         </p>
 
         <p className="text-lg mb-4 leading-relaxed text-white/90">
@@ -24,7 +24,7 @@ const About = () => {
         </p>
 
         <p className="text-lg leading-relaxed italic text-purple-200 mt-6 text-center">
-          “Code is like humor. When you have to explain it, it’s bad.” — Cory House
+          “Code is like humor. When you have to explain it, it’s bad.”  Cory House
         </p>
 
         <div className="mt-8 text-center">
