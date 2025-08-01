@@ -46,50 +46,61 @@ const Hero = () => {
   );
 
   return (
-    <div className={`text-neutral-100 font-sans relative overflow-hidden transition-colors duration-500 ${darkMode ? "bg-neutral-950" : "bg-gray-100 text-black"}`}>
-      <CursorGlow />
+  <div className={`text-neutral-100 font-sans relative overflow-hidden transition-colors duration-500 ${darkMode ? "bg-neutral-950" : "bg-gray-100 text-black"}`}>
+  <CursorGlow />
 
-      {/* Top-Left Controls */}
-      <div className="absolute top-4 left-4 z-50 flex flex-wrap items-center gap-3">
-        <a
-          href="/resume.pdf"
-          download
-          className="flex items-center gap-2 bg-neutral-800 hover:bg-neutral-700 px-4 py-2 rounded-full text-xs tracking-widest text-purple-700 shadow-md"
-        >
-          <FaDownload />
-          Download Resume
-        </a>
+  {/* Top-Left Controls */}
+  <div className="absolute top-4 left-4 z-50 flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-2 sm:gap-3 max-w-[90%]">
+    <a
+      href="/resume.pdf"
+      download
+      className="flex items-center gap-2 bg-neutral-800 hover:bg-neutral-700 px-4 py-2 rounded-full text-xs tracking-widest text-purple-700 shadow-md"
+    >
+      <FaDownload />
+      Download Resume
+    </a>
 
-        <button onClick={() => scrollTo(aboutRef)} className="bg-neutral-800 hover:bg-neutral-700 px-4 py-2 rounded-full text-xs tracking-widest text-cyan-400 shadow-md">
-          About
-        </button>
-        <button onClick={() => scrollTo(skillsRef)} className="bg-neutral-800 hover:bg-neutral-700 px-4 py-2 rounded-full text-xs tracking-widest text-purple-400 shadow-md">
-          Skills
-        </button>
-        <button onClick={() => scrollTo(contactRef)} className="bg-neutral-800 hover:bg-neutral-700 px-4 py-2 rounded-full text-xs tracking-widest text-pink-400 shadow-md">
-          Contact
-        </button>
-      </div>
+    <button
+      onClick={() => scrollTo(aboutRef)}
+      className="bg-neutral-800 hover:bg-neutral-700 px-4 py-2 rounded-full text-xs tracking-widest text-cyan-400 shadow-md"
+    >
+      About
+    </button>
 
-      {/* Top-Right Controls */}
-      <div className="absolute top-4 right-6 flex items-center gap-4 z-20">
-        <a href="https://instagram.com/ahmed.ali.786" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="text-pink-500 hover:scale-110 transition-transform text-xl" />
-        </a>
-        <a href="https://facebook.com/AhmedAliKhan" target="_blank" rel="noopener noreferrer">
-          <FaFacebookF className="text-blue-500 hover:scale-110 transition-transform text-xl" />
-        </a>
-        <a href="https://twitter.com/ahmedali7_86" target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="text-sky-400 hover:scale-110 transition-transform text-xl" />
-        </a>
+    <button
+      onClick={() => scrollTo(skillsRef)}
+      className="bg-neutral-800 hover:bg-neutral-700 px-4 py-2 rounded-full text-xs tracking-widest text-purple-400 shadow-md"
+    >
+      Skills
+    </button>
 
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="ml-2 bg-gray-700 hover:bg-gray-600 px-3 py-1 rounded-full text-xs text-white"
-        >
-          {darkMode ? "☀️ Light" : "🌙 Dark"}
-        </button>
-      </div>
+    <button
+      onClick={() => scrollTo(contactRef)}
+      className="bg-neutral-800 hover:bg-neutral-700 px-4 py-2 rounded-full text-xs tracking-widest text-pink-400 shadow-md"
+    >
+      Contact
+    </button>
+  </div>
+
+  {/* Top-Right Controls */}
+  <div className="absolute top-4 right-4 z-50 flex flex-col sm:flex-row items-end sm:items-center gap-2 sm:gap-4">
+    <a href="https://instagram.com/ahmed.ali.786" target="_blank" rel="noopener noreferrer">
+      <FaInstagram className="text-pink-500 hover:scale-110 transition-transform text-xl" />
+    </a>
+    <a href="https://facebook.com/AhmedAliKhan" target="_blank" rel="noopener noreferrer">
+      <FaFacebookF className="text-blue-500 hover:scale-110 transition-transform text-xl" />
+    </a>
+    <a href="https://twitter.com/ahmedali7_86" target="_blank" rel="noopener noreferrer">
+      <FaTwitter className="text-sky-400 hover:scale-110 transition-transform text-xl" />
+    </a>
+
+    <button
+      onClick={() => setDarkMode(!darkMode)}
+      className="bg-gray-700 hover:bg-gray-600 px-3 py-1 rounded-full text-xs text-white"
+    >
+      {darkMode ? "☀️ Light" : "🌙 Dark"}
+    </button>
+  </div>
 
       {/* Hero Section */}
       <div ref={parallaxRef} className="relative min-h-screen px-6 pt-20 z-10 flex flex-col items-center justify-center text-center transition-all duration-75">
